@@ -1,0 +1,25 @@
+<!--
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.UserMapper">
+
+    &lt;!&ndash;注册账号&ndash;&gt;
+    <insert id="insertUser">
+        insert into user values(null,#{userName},#{password})
+    </insert>
+    &lt;!&ndash;返回uid&ndash;&gt;
+    <select id="getUid" resultType="integer">
+        select * from user where password = #{password} and userName = #{userName}
+    </select>
+    &lt;!&ndash;uid密码登录&ndash;&gt;
+    <select id="loginByUid" resultType="boolean">
+        select count(*) from user where uid = #{uid} and password = #{password}
+    </select>
+    &lt;!&ndash;用户名密码登录&ndash;&gt;
+    <select id="loginByUserName" resultType="boolean">
+        select count(*) from user where userName = #{userName} and password = #{password}
+    </select>
+
+</mapper>-->
